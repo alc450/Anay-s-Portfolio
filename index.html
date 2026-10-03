@@ -58,6 +58,23 @@ cat > index.html <<'EOF'
             margin-bottom: 35px;
         }
 
+        .experience {
+            margin-bottom: 35px;
+        }
+
+        .experience h3 {
+            margin-bottom: 5px;
+        }
+
+        .experience-title {
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .experience ul {
+            line-height: 1.6;
+        }
+
         .project-link {
             display: inline-block;
             margin-top: 8px;
@@ -194,14 +211,68 @@ cat > index.html <<'EOF'
 <section>
     <h2>Experience</h2>
 
-    <h3>Stonehaven LLC</h3>
-    <p>FinTech & Mandates Intern</p>
+    <div class="experience">
+        <h3>Stonehaven LLC</h3>
+        <p class="experience-title">FinTech & Mandates Intern</p>
 
-    <h3>Circular Edge LLC</h3>
-    <p>Accounting Intern</p>
+        <ul>
+            <li>
+                Source and evaluate investment opportunities across Stonehaven's
+                private capital market platforms.
+            </li>
+            <li>
+                Support the integration of artificial intelligence into
+                Stonehaven's proprietary NEXUS technology operating services.
+            </li>
+            <li>
+                Assist with structuring and reviewing mandate agreements for
+                private placement and advisory engagements.
+            </li>
+        </ul>
+    </div>
 
-    <h3>Zensar Technologies</h3>
-    <p>Corporate Finance Intern</p>
+
+    <div class="experience">
+        <h3>Circular Edge LLC</h3>
+        <p class="experience-title">Accounting Intern</p>
+
+        <ul>
+            <li>
+                Assisted the accounting department with implementing a new
+                accounting software system across multiple offices.
+            </li>
+            <li>
+                Improved organization of account data and developed automation
+                processes for future account creation.
+            </li>
+            <li>
+                Reviewed employee timesheet entries to support payroll accuracy
+                and compliance with internal controls.
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="experience">
+        <h3>Zensar Technologies</h3>
+        <p class="experience-title">Corporate Finance Intern</p>
+
+        <ul>
+            <li>
+                Developed experience analyzing profit and loss statements and
+                applying accounting principles to real-world business situations.
+            </li>
+            <li>
+                Analyzed financial reports to identify key performance drivers
+                and their long-term business impact.
+            </li>
+            <li>
+                Built models comparing current and projected performance to
+                identify trends and opportunities for cost optimization.
+            </li>
+        </ul>
+    </div>
+
 </section>
 
 
@@ -236,5 +307,5 @@ cat > index.html <<'EOF'
 EOF
 
 git add index.html
-git commit -m "Update portfolio with project buttons"
+git commit -m "Add experience bullet points"
 git push
