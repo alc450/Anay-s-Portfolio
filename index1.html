@@ -1,0 +1,311 @@
+cat > index.html <<'EOF'
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anay Choudhari | Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #1e3a5f;
+        }
+
+        .skills span {
+            display: inline-block;
+            background-color: #e7edf5;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        .project {
+            margin-bottom: 35px;
+        }
+
+        .experience {
+            margin-bottom: 35px;
+        }
+
+        .experience h3 {
+            margin-bottom: 5px;
+        }
+
+        .experience-title {
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .experience ul {
+            line-height: 1.6;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 12px 18px;
+            background-color: #1e3a5f;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            opacity: 0.85;
+        }
+
+        a {
+            color: #1e3a5f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #1e3a5f;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Anay Choudhari</h1>
+
+    <p>
+        Finance and Data Science student at Rutgers University interested in
+        investment banking, financial technology, and data-driven business strategy.
+    </p>
+</header>
+
+
+<section>
+    <h2>About Me</h2>
+
+    <p>
+        I am a Finance and Data Science student at Rutgers University Honors College
+        with experience in fintech, corporate finance, accounting, consulting,
+        and equity research.
+    </p>
+</section>
+
+
+<section>
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <span>Python</span>
+        <span>Excel</span>
+        <span>Java</span>
+        <span>Adobe Photoshop</span>
+        <span>Financial Analysis</span>
+        <span>Equity Research</span>
+        <span>Financial Modeling</span>
+        <span>Market Research</span>
+    </div>
+</section>
+
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>PSE&G Equity Research Stock Pitch</h3>
+
+        <p>
+            Conducted fundamental research on PSE&G and developed an investment
+            thesis evaluating the company's financial performance, competitive
+            positioning, and future outlook.
+        </p>
+
+        <p>
+            Worked with a five-person team to develop and present the investment
+            recommendation and defend the thesis during a live Q&A.
+        </p>
+
+        <a
+            class="project-link"
+            href="https://www.rulibor.com/bender"
+            target="_blank"
+            rel="noopener noreferrer">
+            Visit LIBOR Bender Project
+        </a>
+    </div>
+
+
+    <div class="project">
+        <h3>YMCA Pricing Strategy Consulting Project</h3>
+
+        <p>
+            Conducted competitive benchmarking of YMCA membership pricing as part
+            of 180 Degrees Consulting.
+        </p>
+
+        <p>
+            Developed a market-aligned pricing framework designed to improve
+            long-term financial sustainability.
+        </p>
+
+        <a
+            class="project-link"
+            href="https://www.ymca.org/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Visit YMCA
+        </a>
+    </div>
+
+
+    <div class="project">
+        <h3>Corporate Finance Analysis Project</h3>
+
+        <p>
+            Analyzed financial statements and business performance during my
+            internship at Zensar Technologies.
+        </p>
+
+        <p>
+            Built financial models comparing current and projected performance
+            to identify business trends and opportunities for cost optimization.
+        </p>
+    </div>
+</section>
+
+
+<section>
+    <h2>Experience</h2>
+
+    <div class="experience">
+        <h3>Stonehaven LLC</h3>
+        <p class="experience-title">FinTech & Mandates Intern</p>
+
+        <ul>
+            <li>
+                Source and evaluate investment opportunities across Stonehaven's
+                private capital market platforms.
+            </li>
+            <li>
+                Support the integration of artificial intelligence into
+                Stonehaven's proprietary NEXUS technology operating services.
+            </li>
+            <li>
+                Assist with structuring and reviewing mandate agreements for
+                private placement and advisory engagements.
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="experience">
+        <h3>Circular Edge LLC</h3>
+        <p class="experience-title">Accounting Intern</p>
+
+        <ul>
+            <li>
+                Assisted the accounting department with implementing a new
+                accounting software system across multiple offices.
+            </li>
+            <li>
+                Improved organization of account data and developed automation
+                processes for future account creation.
+            </li>
+            <li>
+                Reviewed employee timesheet entries to support payroll accuracy
+                and compliance with internal controls.
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="experience">
+        <h3>Zensar Technologies</h3>
+        <p class="experience-title">Corporate Finance Intern</p>
+
+        <ul>
+            <li>
+                Developed experience analyzing profit and loss statements and
+                applying accounting principles to real-world business situations.
+            </li>
+            <li>
+                Analyzed financial reports to identify key performance drivers
+                and their long-term business impact.
+            </li>
+            <li>
+                Built models comparing current and projected performance to
+                identify trends and opportunities for cost optimization.
+            </li>
+        </ul>
+    </div>
+
+</section>
+
+
+<section>
+    <h2>Contact</h2>
+
+    <p>
+        Email:
+        <a href="mailto:anay.choudhari@gmail.com">
+            anay.choudhari@gmail.com
+        </a>
+    </p>
+
+    <p>
+        LinkedIn:
+        <a
+            href="https://www.linkedin.com/in/anay-choudhari/"
+            target="_blank"
+            rel="noopener noreferrer">
+            linkedin.com/in/anay-choudhari
+        </a>
+    </p>
+</section>
+
+
+<footer>
+    <p>© 2026 Anay Choudhari</p>
+</footer>
+
+</body>
+</html>
+EOF
+
+git add index.html
+git commit -m "Add experience bullet points"
+git push
