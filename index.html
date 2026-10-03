@@ -30,6 +30,8 @@ cat > index.html <<'EOF'
 
         header p {
             font-size: 20px;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         section {
@@ -53,17 +55,18 @@ cat > index.html <<'EOF'
         }
 
         .project {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
 
         .project-link {
             display: inline-block;
             margin-top: 8px;
-            padding: 10px 16px;
+            padding: 12px 18px;
             background-color: #1e3a5f;
             color: white;
             text-decoration: none;
             border-radius: 6px;
+            font-weight: bold;
         }
 
         .project-link:hover {
@@ -94,6 +97,7 @@ cat > index.html <<'EOF'
     </p>
 </header>
 
+
 <section>
     <h2>About Me</h2>
 
@@ -103,6 +107,7 @@ cat > index.html <<'EOF'
         and equity research.
     </p>
 </section>
+
 
 <section>
     <h2>Skills</h2>
@@ -118,6 +123,7 @@ cat > index.html <<'EOF'
         <span>Market Research</span>
     </div>
 </section>
+
 
 <section>
     <h2>Projects</h2>
@@ -136,12 +142,15 @@ cat > index.html <<'EOF'
             recommendation and defend the thesis during a live Q&A.
         </p>
 
-        <a class="project-link"
-           href="https://www.rulibor.com/bender"
-           target="_blank">
-            View Bender Trust Fund Research Project
+        <a
+            class="project-link"
+            href="https://www.rulibor.com/bender"
+            target="_blank"
+            rel="noopener noreferrer">
+            Visit LIBOR Bender Project
         </a>
     </div>
+
 
     <div class="project">
         <h3>YMCA Pricing Strategy Consulting Project</h3>
@@ -156,12 +165,15 @@ cat > index.html <<'EOF'
             long-term financial sustainability.
         </p>
 
-        <a class="project-link"
-           href="https://www.ymca.org/"
-           target="_blank">
+        <a
+            class="project-link"
+            href="https://www.ymca.org/"
+            target="_blank"
+            rel="noopener noreferrer">
             Visit YMCA
         </a>
     </div>
+
 
     <div class="project">
         <h3>Corporate Finance Analysis Project</h3>
@@ -178,6 +190,7 @@ cat > index.html <<'EOF'
     </div>
 </section>
 
+
 <section>
     <h2>Experience</h2>
 
@@ -191,6 +204,7 @@ cat > index.html <<'EOF'
     <p>Corporate Finance Intern</p>
 </section>
 
+
 <section>
     <h2>Contact</h2>
 
@@ -203,11 +217,15 @@ cat > index.html <<'EOF'
 
     <p>
         LinkedIn:
-        <a href="https://www.linkedin.com/in/anay-choudhari/" target="_blank">
+        <a
+            href="https://www.linkedin.com/in/anay-choudhari/"
+            target="_blank"
+            rel="noopener noreferrer">
             linkedin.com/in/anay-choudhari
         </a>
     </p>
 </section>
+
 
 <footer>
     <p>© 2026 Anay Choudhari</p>
@@ -218,5 +236,5 @@ cat > index.html <<'EOF'
 EOF
 
 git add index.html
-git commit -m "Update portfolio project links"
+git commit -m "Update portfolio with project buttons"
 git push
